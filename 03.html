@@ -1,0 +1,46 @@
+<script>
+    function gst(price) {
+
+
+        let total = price + price * 0.10;
+
+   
+        // let last = price + total;
+
+        return total;
+
+    }
+
+    let price = parseFloat(prompt("Enter your item price"));
+
+    let res = gst(price)
+    console.log(`your price with gst ${res}`)
+
+    function dis(res) {
+       
+            let discount = res * 10 / 100;
+
+            let sum = discount + res;
+
+            let a= sum-res;
+
+            let b= res-a;
+          
+            console.log(`your discount : ${a}`);
+            console.log(`your price with less discount : ${b}`);
+            return b;
+        }
+        
+     let lasttotal = dis(res)
+
+     if(res>= 1000){
+         
+    console.log(`paid price :${lasttotal}`)
+     }
+     else{
+        console.log("kal aana")
+     }
+
+     
+    // console.log(lasttotal)
+</script>
