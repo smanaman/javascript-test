@@ -20,22 +20,20 @@
        
             let discount = res * 10 / 100;
 
-            let sum = discount + res;
+            let sum = res - discount ;
 
-            let a= sum-res;
-
-            let b= res-a;
           
-            console.log(`your discount : ${a}`);
-            console.log(`your price with less discount : ${b}`);
-            return b;
+            
+            return sum;
         }
         
      let lasttotal = dis(res)
 
      if(res>= 1000){
          
-    console.log(`paid price :${lasttotal}`)
+    console.log(`paid price with 10% discount :${lasttotal}`)
+    // console.log(`your discount : ${discount}`);
+    //         console.log(`your price with less discount : ${sum}`);
      }
      else{
         console.log("kal aana")
