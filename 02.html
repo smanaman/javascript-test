@@ -14,15 +14,16 @@
     let price = parseFloat(prompt("Enter your item price"));
 
     let res = gst(price)
-    // console.log(res)
+    console.log(`your price with gst:${res}`)
 
     function dis(res) {
 
         if (res >= 1000) {
 
             let discount = res * 10 / 100;
+            console.log(`disount your amount :${discount}`)
 
-            let sum = discount + res;
+            let sum = res - discount;
 
             return sum;
         }
