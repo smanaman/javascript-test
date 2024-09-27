@@ -1,0 +1,38 @@
+<script>
+    let bio = [];
+
+    let name = prompt('enter your name');
+    let number = parseFloat(prompt('enter your number'));
+    let adress = prompt('enter your addres');
+    let age = parseFloat(prompt('enter your age'));
+
+    if (name<=0 || name>=0) {
+        
+       console.error('enter a string')
+    }else {
+        bio.push(name);
+    }
+
+    if (number<=0 || number>=0) {
+        bio.push(number);
+      
+     }else {
+        console.error('enter number')
+     }
+ 
+     if (adress<=0 || adress>=0) {
+        console.error('enter address retry')
+      
+     }else {
+      bio.push(adress);
+     }
+
+     if (age<=0 ||age>=0) {
+        bio.push(age);
+      
+     }else {
+        console.error('enter a age retry')
+     }
+    console.log(bio)
+
+</script>

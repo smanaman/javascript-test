@@ -1,0 +1,40 @@
+<script>
+    let main=[];
+
+// name
+
+    let name=prompt("enter your name");
+    main.push(name);
+
+// second arrey
+
+let mark=[];
+
+let frist_sb=parseFloat(prompt("enter your mark 1"));
+let second_sb=parseFloat(prompt("enter your mark 2"));
+let third_sb=parseFloat(prompt("enter your mark 3"));
+let fourth_sb=parseFloat(prompt("enter your mark 4"))
+
+mark.push(frist_sb);
+mark.push( second_sb);
+mark.push(third_sb);
+mark.push(fourth_sb);
+
+let total=frist_sb+second_sb+third_sb+fourth_sb;
+
+mark.push(total)
+
+let per=total/4;
+
+mark.push(per);
+
+if(per>=35){
+    mark.push(true)
+}else{
+  mark.push(false) 
+}
+main.push(mark)
+
+console.log(main)
+
+</script>

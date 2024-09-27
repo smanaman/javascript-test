@@ -1,0 +1,15 @@
+<script>
+
+    let table = [];
+
+    let number = parseFloat(prompt('enter your number'));
+
+    for (let i = 1; i <= 10; i++) {
+
+        table.push(number * i);
+    }
+    for (let i = 1; i <= table.length; i++) {
+        console.log(`${number} x ${i} = ${number * i}`)
+    }
+    console.log(table)
+</script>
