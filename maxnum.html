@@ -1,21 +1,33 @@
 <script>
-    let arr=[];
+    let arr = [];
 
-    let num=parseFloat(prompt('enter your length'))
+    let num = parseFloat(prompt('enter your length'))
 
-    for(let i=0; i<num;i++){
-        let arrnum=parseFloat(prompt('enter your number'));
+    for (let i = 0; i < num; i++) {
+        let arrnum = parseFloat(prompt('enter your number'));
         arr.push(arrnum)
-    } 
+    }   
     // console.log(arr);
-    let max =arr[0];
+    let max = arr[0];
+    let maxtwo = arr[0];
+    // let maxthree = arr[0];
+    for (let i = 0; i < arr.length; i++) {
 
-    for(let i=0;i<arr.length;i++){
+        if (max < arr[i]) {
+        maxtwo=max;
+            max = arr[i];
 
-        if(max<arr[i]){
-            max=arr[i];
+        } else if (maxtwo < arr[i]) {
+            maxtwo = arr[i];
         }
-    }
-    console.log(max);
+        // else if (maxthree < arr[i]) {
+        //     maxthree = arr[i];
+        // }
 
+    }
+
+    console.log(arr);
+    console.log(max);
+    console.log(maxtwo);
+    // console.log(maxthree);
 </script>
