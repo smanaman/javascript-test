@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button {
+        width: 70px;
+    }
+</style>
+
+<body id="body">
+    <button id="btn">click me</button>
+    <button onclick="color()">blue</button>
+    <button onclick="yellow()">yellow</button>
+    <button onclick="black()">black</button>
+    <button onclick="green()">green</button>
+    <button onclick="red()">red</button>
+    <button onclick="defult()">defult</button>
+
+    <h1 id="p">hello world</h1>
+
+
+    <script>
+        document.addEventListener("keypress", (event) => {
+            if (event.key === 'a') {
+                document.getElementById('body').style.backgroundColor = 'red'
+            }
+        })
+    </script>
+    <script>
+        let color = () => {
+            document.getElementById('body').style.backgroundColor = "blue"
+            document.getElementById('p').style.color = "white"
+            alert('body color blue and color white')
+        }
+    </script>
+    <script>
+        let yellow = () => {
+            document.getElementById('body').style.backgroundColor = "yellow"
+            document.getElementById('p').style.color = "white"
+            alert('body color yellow and color white')
+        }
+    </script>
+    <script>
+        let black = () => {
+            document.getElementById('body').style.backgroundColor = "black"
+            document.getElementById('p').style.color = "white"
+            alert('body color black and color white')
+        }
+    </script>
+    <script>
+        let green = () => {
+            document.getElementById('body').style.backgroundColor = "green"
+            document.getElementById('p').style.color = "white"
+            alert('body color green and color white')
+        }
+    </script>
+    <script>
+        let red = () => {
+            document.getElementById('body').style.backgroundColor = "red"
+            document.getElementById('p').style.color = "white"
+            alert('body color red and color white')
+        }
+    </script>
+    <script>
+        let defult = () => {
+            document.getElementById('body').style.backgroundColor = ""
+            document.getElementById('p').style.color = ""
+            alert('defult')
+        }
+    </script>
+</body>
+
+</html>
