@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: grid;
+        place-items: center;
+    }
+
+    #form {
+        width: 350px;
+        height: 300px;
+        /* border: 1px solid black; */
+        margin-top: 20px;
+    }
+
+    #formtwo {
+        width: 350px;
+        height: 300px;
+        /* border: 1px solid black; */
+        margin-top: 20px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        background-color: black;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <form id="form">
+        <h2>Q1.how many type of html ?</h2>
+
+        <input type="radio" name="mcq" value="five">
+        <label>five</label>
+        <br>
+        <br>
+        <input type="radio" name="mcq" value="two">
+        <label>two</label>
+        <br>
+        <br>
+        <input type="radio" name="mcq" value="three">
+        <label>three</label>
+        <br>
+        <br>
+        <input type="radio" name="mcq" value="one">
+        <label>one</label>
+
+        <br>
+        <br>
+        <h3 class="demo"></h3>
+        <!-- <button class="btn" type="submit">submit</button> -->
+
+
+        <h2>Q2.how many type of css ?</h2>
+
+        <input type="radio" name="mcqtwo" value="five">
+        <label>five</label>
+        <br>
+        <br>
+        <input type="radio" name="mcqtwo" value="two">
+        <label>two</label>
+        <br>
+        <br>
+        <input type="radio" name="mcqtwo" value="three">
+        <label>three</label>
+        <br>
+        <br>
+        <input type="radio" name="mcqtwo" value="one">
+        <label>one</label>
+
+        <br>
+        <br>
+
+        <button class="btn" type="submit">submit</button>
+    </form>
+    <!-- <form id="formtwo">
+    
+
+    </form> -->
+
+
+    <script>
+        let count = 0;
+        form.addEventListener("submit", (event) => {
+            event.preventDefault()
+            let ans = document.querySelector('input[name="mcq"]:checked').value
+            console.log(`your answer is :=${ans}`)
+            let result = 'five';
+
+            if (ans === result) {
+                console.log(`Q1=${true}`)
+                count++;
+                console.log(`your score = ${count}`)
+
+            } else {
+                console.log(`Q1=${false}`)
+                console.log(`your right answer is :=${result}`)
+            }
+            // second qution
+            let anstwo = document.querySelector('input[name="mcqtwo"]:checked').value
+            console.log(`your answer is :=${anstwo}`)
+            let resulttwo = 'three'
+
+
+            if (anstwo === resulttwo) {
+                console.log(`Q2=${true}`)
+                count++;
+                console.log(`your score = ${count}`)
+                alert(`your final score:=${count}`)
+              
+            } else {
+                console.log(`Q2=${false}`)
+                console.log(`your right answer is :=${resulttwo}`)
+            }
+
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #form {
+        width: 400px;
+        height: 500px;
+        border: 1px solid black;
+    }
+
+    .text {
+        font-size: 20px;
+        margin-top: -1px;
+        margin-bottom: 10px;
+    }
+
+    #name {
+        width: 98%;
+        height: 30px;
+        margin-top: -22px;
+    }
+
+    #nametwo {
+        width: 98%;
+        height: 30px;
+        margin-top: -22px;
+    }
+
+    #namethree {
+        width: 98%;
+        height: 30px;
+        margin-top: -22px;
+    }
+
+    button {
+        width: 100%;
+        height: 40px;
+    }
+</style>
+
+<body>
+    <form id="form">
+        <p class="text">Enter your name</p>
+        <input id="name" type="text" value="">
+        <br>
+        <br>
+        <p class="text">Enter your surname</p>
+        <input id="nametwo" type="text" value="">
+
+        <br>
+        <br>
+        <p class="text">Enter your email</p>
+        <input id="namethree" type="email" value="">
+
+        <br>
+        <br>
+        <button type="submit">submit</button>
+
+
+    </form>
+
+    <script>
+        // let data=document.getElementById('form');
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            let res = document.getElementById("name").value;
+            let restwo = document.getElementById("nametwo").value;
+            let resthree = document.getElementById("namethree").value;
+            console.log(res, restwo, resthree)
+        })
+    </script>
+
+
+</body>
+
+</html>
