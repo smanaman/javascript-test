@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Car {
+            constructor(name, color, price, saftyrate) {
+                this.name = name,
+                    this.color = color,
+                    this.price = price,
+                    this.saftyrate = saftyrate
+
+
+            }
+            info() {
+                console.log(`${this.name}  color is ${this.color} it's prise $${this.price} and it's safty rate is ${this.saftyrate} `);
+            }
+        }
+        class Bmw extends Car {
+            constructor(name, color, price, saftyrate, engine_model) {
+                super(name, color, price, saftyrate, engine_model)
+                this.engine_model = engine_model
+            }
+            info() {
+                super.info()
+            }
+        }
+
+
+        class Rollsroyal extends Car {
+            constructor(name, color, price, saftyrate, engine_model, service_text) {
+                super(name, color, price, saftyrate, engine_model, service_text)
+                this.engine_model = engine_model,
+                    this.service_text = service_text
+            }
+            rollsinfo(){
+                super.info()
+                console.log(`it's servicetext is $ ${this.service_text}`);
+                
+            }
+
+        }
+
+        let bmw = new Bmw('bmw', 'black', 12345, '4.5', 'v8')
+        bmw.info()
+        console.log(bmw);
+
+        let roolsroyal= new Rollsroyal('phantom','black',123456,'5','v12',1000)
+        roolsroyal.rollsinfo()
+        console.log(roolsroyal);
+        
+
+
+    </script>
+</body>
+
+</html>

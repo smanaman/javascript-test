@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Bank {
+            constructor(name,account,balanse,ifsc,trans) {
+               this.name=name,
+               this.account=account,
+               this._balanse=balanse,
+               this.ifsc=ifsc, 
+               this.trans=trans
+            }
+            info(){
+                console.log(`${this.name}=${this.account}=${this._balanse}=${this.ifsc}`);
+                
+            }
+            trasition(){
+                console.log(`${this.trans}`);
+                
+            }
+            get balanse(){
+                return this._balans
+            }
+            set balanse(amount){
+                return this._balanse=amount
+            }
+        }
+        let arr=[1234,1123,123,1224]
+        let luli= new Bank('luli',1234567777,113457888,'amreli123',arr)
+
+
+        console.log(luli.balanse=2000);
+
+         console.log(luli);
+        
+         
+
+         
+    </script>
+</body>
+</html>
