@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    const mypromise=new Promise((resolve,reject)=>{
+
+        const sucsses=false
+       setTimeout(() => {
+        if(sucsses){
+            resolve("Operation is successfully completed (Resolve/Fullfild) .then()")
+        }
+        else{
+            reject( "Your operation is Rejected or failed .catch()")
+        }
+       }, 2000);
+    })
+
+    mypromise
+    .then((res)=>console.log(res))
+    .catch((err)=>console.log(err))
+    .finally(()=>console.log('finally()'))
+   </script> 
+</body>
+</html>

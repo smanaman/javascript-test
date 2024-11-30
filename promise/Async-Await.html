@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log('step-1');
+
+        function dataone(step) {
+
+            return new Promise((resolve) => {
+
+                setTimeout(() => {
+                    console.log(step);
+                    resolve()
+
+                }, 2000);
+
+            })
+
+        }
+
+        function datatwo(step) {
+
+            return new Promise((resolve) => {
+
+                setTimeout(() => {
+                    console.log(step);
+                    resolve()
+
+                }, 2000);
+
+            })
+
+        }
+
+        async function process() {
+            
+            await dataone('step-2')
+            await datatwo('step-3')
+            console.log('end');
+            
+
+        }
+        process()
+    </script>
+</body>
+
+</html>

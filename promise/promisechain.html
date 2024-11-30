@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('step-1');
+
+        function data(step) {
+
+            return new Promise((resolve)=>{
+
+                setTimeout(() => {
+
+                    console.log(step);
+                    resolve()
+
+                }, 2000);
+
+
+            })
+            
+        }
+        data('step-2 running')
+        .then(()=>data('step-3'))
+        .then(()=>data('step-4'))
+    </script>
+</body>
+</html>
